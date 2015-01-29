@@ -55,7 +55,7 @@ public class FitBitSyncService extends OAuthSyncService
             SimpleDateFormat tsFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
             String timestamp = tsFormat.format(new Date());
 
-            OAuthRequest request = new OAuthRequest(Verb.POST, API_BASE + "/user/-/body.json");
+            OAuthRequest request = new OAuthRequest(Verb.POST, API_BASE + "/user/-/body/log/weight.json");
             request.addBodyParameter("weight", String.format("%.2f", weight));
             request.addBodyParameter("date", timestamp);
             oaService.signRequest(oaToken, request);
