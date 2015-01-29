@@ -16,7 +16,7 @@ public class FitBitSyncService extends OAuthSyncService
     private static final String TAG = "FitBitSyncService";
     private static final boolean DEBUG = false;
 
-    private static final String API_BASE = "http://api.fitbit.com/1";
+    private static final String API_BASE = "https://api.fitbit.com/1";
 
     public FitBitSyncService()
     {
